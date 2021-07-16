@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<h1>Qual foi o número pensado?</h1>
+
+Vamos jogar um jogo?<br>Eu estou pensando em um número de 1 a 10... Será que você consegue acertar?<br><br><br>Eu acho que o número pensado é
+
+<input/>
+<button>comparar</button>
+
+<script>
+
+	function pulaLinha (){
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function mostra(frase){
+		document.write(frase);
+	}
+
+	var numeroPensado = 5;
+	var input = document.querySelector("input");
+
+	function verifica() {
+		if(input.value == numeroPensado) {
+			alert("Você acertou!");
+		}else{
+			alert("Você errou.");
+		}
+	}
+
+	var button = document.querySelector("button");
+	button.onclick = verifica;
+
+</script>
+
+	
+
